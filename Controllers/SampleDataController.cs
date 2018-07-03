@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CodingFlow.Controllers
 {
+    [ApiController]
     [Route("api/[controller]")]
     public class SampleDataController : Controller
     {

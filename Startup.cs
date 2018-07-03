@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NSwag.AspNetCore;
 
 namespace CodingFlow
 {
@@ -45,6 +46,11 @@ namespace CodingFlow
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
+
+            app.UseSwaggerUi3(settings =>
+            {
+                settings.SwaggerRoute = "/swagger/swagger.json";
+            });
 
             app.UseMvc(routes =>
             {
