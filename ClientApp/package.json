@@ -1,5 +1,5 @@
 {
-  "name": "CodingFlow",
+  "name": "codingflow",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -25,11 +25,13 @@
     "@angular/router": "^6.0.5",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
     "aspnet-prerendering": "^3.0.1",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.1.1",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
+    "ngx-bootstrap": "^3.0.1",
     "rxjs": "^6.2.1",
-    "zone.js": "^0.8.26",
-    "rxjs-compat": "^6.0.0-rc.0"
+    "rxjs-compat": "^6.0.0-rc.0",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular/cli": "^6.0.8",
