@@ -15,8 +15,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.0" />
-    <PackageReference Include="NSwag.AspNetCore" Version="11.17.19" />
-    <PackageReference Include="NSwag.MSBuild" Version="11.17.19" />
+    <PackageReference Include="NSwag.AspNetCore" Version="11.18.5" />
+    <PackageReference Include="NSwag.MSBuild" Version="11.18.5" />
   </ItemGroup>
 
   <ItemGroup>

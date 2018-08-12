@@ -1,6 +1,6 @@
 ﻿{
-  "x-generator": "NSwag v11.17.19.0 (NJsonSchema v9.10.58.0 (Newtonsoft.Json v11.0.0.0))",
-  "swagger": "2.0",
+  "x-generator": "NSwag v11.18.5.0 (NJsonSchema v9.10.67.0 (Newtonsoft.Json v11.0.0.0))",
+  "openapi": "3.0.0",
   "info": {
     "title": "Coding Flow API",
     "version": "1.0.0"
@@ -21,10 +21,14 @@
           "200": {
             "x-nullable": true,
             "description": "",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/WeatherForecast"
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
               }
             }
           }
@@ -32,28 +36,30 @@
       }
     }
   },
-  "definitions": {
-    "WeatherForecast": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "temperatureC",
-        "temperatureF"
-      ],
-      "properties": {
-        "dateFormatted": {
-          "type": "string"
-        },
-        "temperatureC": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "summary": {
-          "type": "string"
-        },
-        "temperatureF": {
-          "type": "integer",
-          "format": "int32"
+  "components": {
+    "schemas": {
+      "WeatherForecast": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "temperatureC",
+          "temperatureF"
+        ],
+        "properties": {
+          "dateFormatted": {
+            "type": "string"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32"
+          }
         }
       }
     }
